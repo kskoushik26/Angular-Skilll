@@ -1,0 +1,76 @@
+.div1 {
+    width: 232px;
+    height: 100px;
+    border: 1px solid blue;
+    background: blue;
+  }
+
+.buttn{
+    background-color:rgb(20, 160, 216);
+  color: white;
+  padding:8px 40px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width:210px;
+   
+}
+.buttn1{
+    background-color:rgb(124, 145, 153);
+  color: white;
+  padding:8px 40px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width:180px;
+   
+}
+.buttn5{
+    background-color:rgb(219, 243, 230);
+  color: white;
+  padding:8px 40px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width:180px;
+   
+}
+.buttn2{
+    background-color:rgb(230, 199, 28);
+  color: white;
+  padding:8px 40px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width:335px;
+   
+}
+.buttn3{
+    background-color:rgb(224, 89, 35);
+    color: white;
+    padding:8px 40px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    width:335px;  
+}
+.buttn6{
+    background-color:rgb(26, 90, 207);
+  color: white;
+  padding:8px 40px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width:300px;
+   
+}
+.card{
+    height: 500px;
+}

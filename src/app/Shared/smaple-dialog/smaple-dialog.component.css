@@ -1,0 +1,21 @@
+.mat-dialog-content {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.buttn{
+    background-color:rgb(20, 160, 216);
+  color: white;
+  text-align: center;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width:100px;
+   
+}
+button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+  

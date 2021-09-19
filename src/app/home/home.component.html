@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="card">
+ <div class="row">
+     <button class="buttn">
+         <p style="float: left;">Currency Pipe</p>
+   <p style="float: right;">{{currencyValue | currency:'INR' }} </p>
+     </button>
+
+     <button class="buttn1">
+        <p style="float: left;">Time Pipe</p>
+  <p style="float: right;">{{timeValue | date:'shortTime'}} </p>
+    </button>
+    <button class="buttn5">
+        <p style="float: left;color: black;">Date Pipe</p>
+  <p style="float: right; color: black;">{{timeValue | date:'shortDate'}} </p>
+    </button>
+    <button class="buttn2">
+        <p style="float: left;">Date Pipe</p>
+  <p style="float: right;">{{timeValue | date:'fullDate'}} </p>
+    </button>
+    <button class="buttn3">
+        <p style="float: left;">UTC DATE </p>
+  <p style="float: right;">{{ timeValueYear | date:'medium'}} </p>
+    </button>
+ </div>
+ <div>
+    <button class="buttn6" mat-button (click)="openDialog()">Click here to open Dialog</button>
+                    
+ </div>
+ 
+</div>
+<app-footer></app-footer>

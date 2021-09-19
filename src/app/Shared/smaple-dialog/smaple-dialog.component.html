@@ -1,0 +1,43 @@
+<h1 mat-dialog-title>Sample Dialog</h1>
+<form [formGroup]="form" (ngSubmit)="submit()" >
+<div>
+   
+<div mat-dialog-content>
+  <p>plain text sample</p>
+  <mat-form-field>
+    <input matInput placeholder="TEXT" formControlName="text1" >
+    <mat-error *ngIf="form.get('text1').touched && form.get('text1').hasError('required') ">required</mat-error>
+  </mat-form-field>
+</div> 
+  <div mat-dialog-content>
+  <p>plain text sample</p>
+  <mat-form-field>
+    <input matInput placeholder="TEXT" formControlName="text2" >
+    <mat-error *ngIf="form.get('text2').touched && form.get('text2').hasError('required') ">required</mat-error>
+  </mat-form-field>
+  
+</div>
+</div>
+<div>
+  <div mat-dialog-content>
+    <p>plain text sample</p>
+    <mat-form-field>
+      <input matInput placeholder="TEXT" formControlName="text3" >
+      <mat-error *ngIf="form.get('text3').touched && form.get('text3').hasError('required') ">required</mat-error>
+    </mat-form-field>
+  </div> 
+    <div mat-dialog-content>
+    <p>plain text sample</p>
+    <mat-form-field>
+      <input matInput placeholder="TEXT" formControlName="text4" required >
+      <mat-error *ngIf="form.get('text4').touched && form.get('text4').hasError('required') ">required</mat-error>
+    </mat-form-field>
+    
+  </div>
+  </div>
+<div mat-dialog-actions style="float: right;">
+  <button mat-button class="buttn"  [disabled]="form.invalid"
+             cdkFocusInitial>Save</button>
+             <button mat-button (click)="onCancel()">Cancel</button>
+</div>
+</form>

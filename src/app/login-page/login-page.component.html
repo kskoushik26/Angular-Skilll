@@ -1,0 +1,27 @@
+<div class="center">
+  
+  <img  src="../../assets/images/logo.png" height="200px" width="200px">
+<form [formGroup]="loginForm" (ngSubmit)="login()"> 
+  <div style="display: block;">
+    <mat-form-field class="full-width">
+      <label></label>
+      <input matInput  type="text" formControlName="userName" placeholder="Email Id"  required>
+      <mat-error *ngIf="loginForm.get('userName').touched && loginForm.get('userName').hasError('required') ">User Name is required</mat-error>
+    </mat-form-field>
+    </div>
+    <div>
+    <mat-form-field class="full-width">
+      <label></label>
+      <input matInput  type="password" formControlName="password" placeholder="Password"  required>
+      <mat-error *ngIf="loginForm.get('password').touched && loginForm.get('password').hasError('required') ">Password is required</mat-error>
+    </mat-form-field>
+
+    </div>
+    <div class="col-md-4">
+                    
+      <button class="buttn">Login</button>
+  
+  </div>
+
+  </form>
+</div>
